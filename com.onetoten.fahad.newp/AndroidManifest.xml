@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.onetoten.fahad.newp" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="21" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.onetoten.fahad.newp.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.onetoten.fahad.newp.permission.C2D_MESSAGE" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/iconn" android:name="com.onetoten.fahad.newp.ParseApplication">
+        <activity android:label="@string/title_activity_main" android:name="com.onetoten.fahad.newp.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.onetoten.fahad.newp.SingleItemView" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_start_page" android:name="com.onetoten.fahad.newp.start_page" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_signup" android:name="com.onetoten.fahad.newp.signup" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_profile" android:name="com.onetoten.fahad.newp.Profile" android:screenOrientation="portrait" />
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.onetoten.fahad.newp" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_activity_upload__image" android:name="com.onetoten.fahad.newp.Upload_Image" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_splash_screen" android:name="com.onetoten.fahad.newp.splashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_sign_up_first" android:name="com.onetoten.fahad.newp.SignUpFirst" />
+        <activity android:label="@string/title_activity_edit_profie" android:name="com.onetoten.fahad.newp.EditProfile" />
+        <activity android:label="@string/title_activity_edit_profile1" android:name="com.onetoten.fahad.newp.EditProfile1" />
+        <activity android:label="@string/title_activity_skip_edit_profile" android:name="com.onetoten.fahad.newp.SkipEditProfile" />
+        <activity android:label="@string/title_activity_hottest_in_school" android:name="com.onetoten.fahad.newp.HottestInSchool" />
+        <activity android:label="@string/title_activity_gesture" android:name="com.onetoten.fahad.newp.gesture" />
+        <activity android:label="@string/title_activity_others_profile" android:name="com.onetoten.fahad.newp.OthersProfile" />
+        <activity android:label="@string/title_activity_notifications" android:name="com.onetoten.fahad.newp.Notifications" />
+        <activity android:label="@string/title_activity_bio_page" android:name="com.onetoten.fahad.newp.BioPage" />
+        <activity android:label="@string/title_activity_other_profiles_bio" android:name="com.onetoten.fahad.newp.otherProfilesBio" />
+        <activity android:label="@string/title_activity_search" android:name="com.onetoten.fahad.newp.Search" />
+        <activity android:label="@string/title_activity_no_internet_page" android:name="com.onetoten.fahad.newp.noInternetPage" />
+    </application>
+</manifest>

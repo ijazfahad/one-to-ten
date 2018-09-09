@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="menu_bio_page">res/menu/menu_bio_page.xml</menu>
+    <menu name="menu_edit_profie">res/menu/menu_edit_profie.xml</menu>
+    <menu name="menu_edit_profile">res/menu/menu_edit_profile.xml</menu>
+    <menu name="menu_edit_profile1">res/menu/menu_edit_profile1.xml</menu>
+    <menu name="menu_gesture">res/menu/menu_gesture.xml</menu>
+    <menu name="menu_hottest_in_school">res/menu/menu_hottest_in_school.xml</menu>
+    <menu name="menu_main">res/menu/menu_main.xml</menu>
+    <menu name="menu_no_internet_page">res/menu/menu_no_internet_page.xml</menu>
+    <menu name="menu_notifications">res/menu/menu_notifications.xml</menu>
+    <menu name="menu_other_profiles_bio">res/menu/menu_other_profiles_bio.xml</menu>
+    <menu name="menu_others_profile">res/menu/menu_others_profile.xml</menu>
+    <menu name="menu_profile">res/menu/menu_profile.xml</menu>
+    <menu name="menu_search">res/menu/menu_search.xml</menu>
+    <menu name="menu_sign_up_first">res/menu/menu_sign_up_first.xml</menu>
+    <menu name="menu_signup">res/menu/menu_signup.xml</menu>
+    <menu name="menu_skip_edit_profile">res/menu/menu_skip_edit_profile.xml</menu>
+    <menu name="menu_splash_screen">res/menu/menu_splash_screen.xml</menu>
+    <menu name="menu_start_page">res/menu/menu_start_page.xml</menu>
+    <menu name="menu_upload__image">res/menu/menu_upload__image.xml</menu>
+</resources>
